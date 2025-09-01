@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sohil | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Sohil</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="image/profile.jpg" alt="Sohil Photo">
+    <h1>Hello, I'm Sohil</h1>
+    <p>AI & Data Science Engineer | Passionate about solving real-world problems with AI, ML & DL.</p>
+    <div class="social-links">
+      <a href="https://github.com/Sohil-04" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/sohil-tadavi-854131296/" target="_blank">LinkedIn</a>
+      <a href="https://www.kaggle.com/sohiltadavi" target="_blank">Kaggle</a>
+      <a href="https://www.instagram.com/sohil_tadavi_04/" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an AI and Data Science engineer with experience in building predictive models,
+      analyzing datasets, and deploying ML solutions. I love creating projects that solve
+      real-world problems with data-driven approaches.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-box">
+        <h3>Progrmming skill & Flamework</h3>
+        <ul>
+          <li>Python</li>
+          <li>Machine Learning</li>
+          <li>Data Analysis</li>
+          <li>NLP</li>
+          <li>pyton Libraries(NumPy, Pandas, Matplotlib,streamlit,pygame)</li>
+          <li>HTML & CSS</li>
+
+        </ul>
+      </div>
+      <div class="skill-box">
+        <h3>Soft Skills & Tools</h3>
+        <ul>
+          <li>git and github</li>
+          <li>communication skill</li>
+          <li>Teamwork & Collaboration</li>
+          <li>Adaptability</li>
+          <li>Creativity</li>
+          
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-type">
+      <div class="project-card">
+        <img src="image/major.jpg" alt="image">
+        <h3>Major Projects</h3>
+        <p>Click below to explore my major AI & ML projects.</p>
+        <a href="major.html">View Major Projects</a>
+      </div>
+      <div class="project-card">
+        <img src="image/minor.png" alt="image">
+        <h3>Minor Projects</h3>
+        <p>Click below to see my smaller experiments & mini projects.</p>
+        <a href="minor.html">View Minor Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formMsg" class="form-msg"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sohil. All rights reserved.</p>
+  </footer>
+
+  <!-- JS for contact -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("formMsg").innerText = 
+        "✅ Message sent successfully! I’ll get back to you soon.";
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
